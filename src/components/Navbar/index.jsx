@@ -25,7 +25,7 @@ const Navbar = () => {
                     
                 }} to="/">Home</Link>
             </li>
-            <li style={{display:"flex",
+            {/* <li style={{display:"flex",
                 alignItems:"center"
             }}>
                 <Link style={{textDecoration:"none",
@@ -33,7 +33,7 @@ const Navbar = () => {
                     fontSize:"22px",
                     
                 }}to="About">About</Link>
-            </li>
+            </li> */}
             <li style={{display:"flex",
                 alignItems:"center"
             }}>

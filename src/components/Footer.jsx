@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -14,7 +16,8 @@ const Footer = () => {
     //     </div>
 
     // </footer>
-    <footer style={{padding:100,
+    <footer style={{
+        padding:60,
         backgroundColor:'#03011c',
         display:"flex",
         gap:"20px"
@@ -23,7 +26,7 @@ const Footer = () => {
             <h1 style={{color:"#f5f5f5",
                 fontWeight:"normal"
             }}>School</h1>
-            <p style={{color:'white'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere dolor tenetur cupiditate dicta nam!</p>
+            <p style={{color:'#f5f5f5'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere dolor tenetur cupiditate dicta nam!</p>
         </div>
         <div>
             <h1 style={{color:"#f5f5f5",
@@ -33,14 +36,15 @@ const Footer = () => {
                 margin:'0px',
                 display:"flex",
                 flexDirection:"column",
-                gap:'10px'
+                gap:'10px',
+                listStyle:"none"
                 
             }}>
-                <li><a style={{textDecoration:'none'}} href="#">home</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Teachers</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Holiday</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Contact us</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Talk us</a></li>
+                <li><Link to="/"style={{textDecoration:'none',color:"#f5f5f5"}}>home</Link></li>
+                <li><Link to="teacher" style={{textDecoration:'none',color:"#f5f5f5"}}>Teachers</Link></li>
+                <li><Link to="holidays" style={{textDecoration:'none',color:"#f5f5f5"}}>Holiday</Link></li>
+                <li><Link to="contact" style={{textDecoration:'none',color:"#f5f5f5"}}>Contact us</Link></li>
+                {/* <li><a style={{textDecoration:'none'}} href="#">Talk us</a></li> */}
             </ul>
         </div>
         <div>
@@ -51,25 +55,39 @@ const Footer = () => {
                 margin:'0px',
                 display:"flex",
                 flexDirection:"column",
-                gap:'10px'
+                gap:'10px',
+                listStyle:"none"
                 
             }}>
-                <li><a style={{textDecoration:'none'}} href="#">youtueb</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">instagram</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Linkdin</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Twiter</a></li>
-                <li><a style={{textDecoration:'none'}} href="#">Contact us</a></li>
+                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                <i className="ri-youtube-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
+                    youTube
+                    </a></li>
+                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                <i className="ri-instagram-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
+                    Instagram
+                    </a></li>
+                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                <i className="ri-linkedin-box-line"style={{marginRight:"5px",color:"#f5f5f5"}} ></i>
+                    Linkdin
+                    </a></li>
+                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                <i className="ri-twitter-x-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
+                    Twitter
+                    </a></li>
+                {/* <li><a style={{textDecoration:'none'}} href="#">Contact us</a></li> */}
             </ul>
         </div>
        
         <div>
             <h1 style={{color:"#f5f5f5",
-                fontWeight:"normal"
-            }}>Enquiry</h1>
-            <form style={{display:'flex',flexDirection:'column',gap:'10px'}}><input required type="text" style={{border:'none',padding:'8px'}} placeholder='Fullname' />
-            <input required type="text" style={{border:'none',padding:'8px'}} placeholder='Email' />
-            <textarea style={{padding:'10px'}} placeholder='Message'></textarea>
-            <button style={{width:'fit-content',border:'none',padding:'10px'}}>Submit</button>
+                fontWeight:"normal",
+                // marginTop:"100px"
+            }}>Contact us</h1>
+            <form style={{display:'flex',flexDirection:'column',gap:'10px',marginTop:"15px"}}><input required type="text" style={{border:'none',padding:'8px',borderRadius:"5px",outline:"none"}} placeholder='Fullname' />
+            <input required type="text" style={{border:'none',padding:'8px',borderRadius:"5px",outline:"none"}} placeholder='example@gmail.com' />
+            <textarea style={{padding:'10px',borderRadius:"5px",outline:"none"}} placeholder='Message...'></textarea>
+            <button style={{width:'fit-content',border:'none',padding:'10px',borderRadius:"5px",background:"#ffa500",color:"#f5f5f5"}}>Submit</button>
             </form>
             
         </div>

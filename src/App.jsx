@@ -15,6 +15,7 @@
 // export default App
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import React from 'react'
+import 'remixicon/fonts/remixicon.css'
 import Home from './components/Home'
 import About from './components/About'
 import Teacher from './components/Teacher'
