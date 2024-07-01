@@ -2,6 +2,18 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    // <footer style={{
+    //     background:"#280044",
+    //     height:"180px 50%"
+    // }}>
+    //     <div>
+    //         <h2 style={{color:"white",fontWeight:"200"}}>CodeSchool</h2>
+    //         <p style={{color:'white'}}>
+    //             Online learning community school for coder kids
+    //         </p>
+    //     </div>
+
+    // </footer>
     <footer style={{padding:100,
         backgroundColor:'#03011c',
         display:"flex",
