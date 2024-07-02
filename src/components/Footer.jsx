@@ -59,22 +59,22 @@ const Footer = () => {
                 listStyle:"none"
                 
             }}>
-                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                <li><Link to="#" style={{textDecoration:'none',color:"#f5f5f5"}}>
                 <i className="ri-youtube-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
                     youTube
-                    </a></li>
-                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                    </Link></li>
+                <li><Link to="#" style={{textDecoration:'none',color:"#f5f5f5"}}>
                 <i className="ri-instagram-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
                     Instagram
-                    </a></li>
-                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                    </Link></li>
+                <li><Link to="#" style={{textDecoration:'none',color:"#f5f5f5"}}>
                 <i className="ri-linkedin-box-line"style={{marginRight:"5px",color:"#f5f5f5"}} ></i>
                     Linkdin
-                    </a></li>
-                <li><a style={{textDecoration:'none',color:"#f5f5f5"}} href="#">
+                    </Link></li>
+                <li><Link to="#" style={{textDecoration:'none',color:"#f5f5f5"}} >
                 <i className="ri-twitter-x-line" style={{marginRight:"5px",color:"#f5f5f5"}}></i>
                     Twitter
-                    </a></li>
+                    </Link></li>
                 {/* <li><a style={{textDecoration:'none'}} href="#">Contact us</a></li> */}
             </ul>
         </div>
