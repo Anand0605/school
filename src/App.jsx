@@ -1,18 +1,4 @@
-// import React from 'react'
-// import Navbar from './components/Navbar'
-// import Footer from './components/Footer'
-// import './App.css'
 
-// const App = () => {
-//   return (
-//     <>
-//       <Navbar />
-//       <Footer/>
-//     </>
-//   )
-// }
-
-// export default App
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
@@ -41,3 +27,57 @@ const App = () => {
 }
 
 export default App
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   const [show, setShow] = useState(false)
+//   const [fontSize,setFontSize] = useState(20)
+
+ 
+ 
+//   const toggle=()=>{
+// setShow(!show)
+//   }
+  
+//   return (
+//     <div>
+//       <h1 style={{fontSize:show? "100px":"16px"}}>Anand</h1>
+//       {show && <p style={{color:show ? "red":"yellow"}}>www.Anand.com</p>}
+
+//       <button onClick={toggle}>
+//         {show ? 'hide':'show'}
+//       </button>
+//       <p style={{fontSize :fontSize,color:fontSize===20 ? "red":'blue'}}>Lorem ipsum dolor sit amet.</p>
+//       <button onClick={()=>{setFontSize(fontSize===20 ? 100 :20)}}>button</button>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
