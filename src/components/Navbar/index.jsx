@@ -74,9 +74,9 @@ const Navbar = () => {
                 }} to="contact">Contact us</Link>
             </li> */}
                 {
-                    menus.map((menu) => {
+                    menus.map((menu,index) => {
                         return (
-                            <li style={{
+                            <li key={index} style={{
                                 display: "flex",
                                 alignItems: "center"
                             }}>
