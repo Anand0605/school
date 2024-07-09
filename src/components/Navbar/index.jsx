@@ -8,17 +8,34 @@ const menus = [
         href: '/'
     },
     {
+        lable: 'Admission',
+        href: [
+            {
+                lable:"home"
+            }
+        ]
+    },
+    {
+        lable: 'Result',
+        href: '/result'
+    },
+    {
         lable: 'Teacher',
-        href: 'teacher'
+        href: '/teacher'
     },
     {
         lable: 'Holodays',
-        href: 'holidays'
+        href: '/holidays'
+    },
+    {
+        lable: 'Ficilities',
+        href: '/facilities'
     },
     {
         lable: 'Conatct Us',
-        href: 'contact'
-    },
+        href: '/contact'
+    }
+    
 ]
 const Navbar = () => {
     return (
@@ -27,52 +44,17 @@ const Navbar = () => {
             display: "flex",
             justifyContent: "space-between",
             padding: "0 25px",
-            boxShadow: "0 8px 8px 0 rgba(0,0,0,0.1)"
+            boxShadow: "0 8px 8px 0 rgba(0,0,0,0.1)",
+            backgroundColor:"white",
+            position:"sticky",
+            top:"0",
+            zIndex:51
         }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
                 <img src="./images/school.webp" alt="" width={"60"} />
-                <h1>School</h1>
+                <h1 style={{fontSize:"20px",fontWeight:"bold"}}>Unity Grove School</h1>
             </div>
             <ul style={{ listStyle: "none", display: "flex", gap: "15px" }}>
-                {/* <li style={{display:"flex",
-                alignItems:"center"
-            }}>
-                <Link style={{textDecoration:"none",
-                    color:"#323232",
-                    fontSize:"22px",
-                    
-                }} to="/">Home</Link>
-            </li> */}
-                {/* <li style={{display:"flex",
-                alignItems:"center"
-            }}>
-                <Link style={{textDecoration:"none",
-                    color:"#323232",
-                    fontSize:"22px",
-                    
-                }} to="teacher">Teachers</Link>
-            </li>
-            <li style={{display:"flex",
-                alignItems:"center"
-            }}>
-                <Link style={{textDecoration:"none",
-                    color:"#323232",
-                    fontSize:"22px",
-                    
-                }} to="holidays">Holidays</Link>
-            </li>
-            <li style={{display:"flex",
-                alignItems:"center"
-            }}>
-                <Link className='contact-btn' style={{textDecoration:"none",
-                    color:"#323232",
-                    fontSize:"22px",
-                    backgroundColor:"dodgerblue",
-                    padding:"10px 28px",
-                    borderRadius:"4px",
-                    color:"white"
-                }} to="contact">Contact us</Link>
-            </li> */}
                 {
                     menus.map((menu,index) => {
                         return (
